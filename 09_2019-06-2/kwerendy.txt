@@ -1,0 +1,4 @@
+kw1. SELECT marka, model from samochody where kolor = 'czerwony';
+kw2. update samochody SET stan = 'dobry' where rocznik = '2003';
+kw3. create user 'andrzej'@'localhost' IDENTIFIED BY 'andrzej!@';
+kw4. grant select, update ON samochody TO 'andrzej'@'localhost';

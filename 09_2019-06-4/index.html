@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Proste działania</h3>
+    <label for="la">Liczba A:</label><br>
+    <input id="la" name="la" type="number"><br>
+    <label for="lb">Liczba B:</label><br>
+    <input id="lb" name="lb" type="number"><br><br>
+
+    <input onclick="dodawanie()" value="+" type="submit">
+    <input onclick="odejmowanie()" value="-" type="submit">
+    <input onclick="mnozenie()" value="*" type="submit">
+    <input onclick="dzielenie()" value="/" type="submit">
+    <input onclick="potegowanie()" value="A^B" type="submit">
+
+    <div id="odp">
+
+    </div>
+</body>
+</html>
+<script>
+    function dodawanie(){
+        // sposob 1
+        // let a = parseInt(la.value);
+        // let b = parseInt(lb.value);
+        // let wynik = (a + b);
+        // odp.innerHTML = wynik;
+
+        // sposob 2
+        let a = la.value;
+        let b = lb.value;
+        let wynik = (Number(a) + Number(b));
+        odp.innerHTML = wynik;
+    }
+    
+    function odejmowanie(){
+        let a = la.value;
+        let b = lb.value;
+        let wynik = (a - b);
+        odp.innerHTML = wynik;
+    }
+    function mnozenie(){
+        let a = la.value;
+        let b = lb.value;
+        let wynik = (a * b);
+        odp.innerHTML = wynik;
+    }
+    function dzielenie(){
+        let a = la.value;
+        let b = lb.value;
+        let wynik = (a / b);
+        odp.innerHTML = wynik;
+    }
+    function potegowanie(){
+        let a = la.value;
+        let b = lb.value;
+        let wynik = (a ** b);
+        odp.innerHTML = wynik;
+    }
+</script>

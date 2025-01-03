@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Imie: </label>
+    <input id="imie" type="text"><br>
+    <label>nazwisko: </label>
+    <input id="nazwisko" type="text"><br>
+    <label>email: </label>
+    <input id="mail" type="email"><br>
+
+    <select id="select">
+        <option id="wirusy">wirusy</option>
+        <option id="robaki">robaki</option>
+        <option id="biedaki">biedaki</option>
+    </select><br>
+    <input id="kopia" type="checkbox">Wyślij kopię wiadomości<br>
+    <input id="reset" type="submit" value="Czyść">
+    <input id="wyslij" type="submit" value="Wyślij">
+    <hr>
+    <div id="wynik"></div>
+    <script>
+        wyslij.addEventListener('click', () => {
+            let im = imie.value;
+            let nazw = nazwisko.value;
+            let email = mail.value;
+            let opcja = select.value;
+            let kopiav = kopia.checked;
+
+            wynik.innerHTML = "<p>"+ im + nazw +"</p>"
+            wynik.innerHTML += "<p>"+ email +"</p>"
+            wynik.innerHTML += "<p>Usługa: "+  +"</p>"
+        });
+    </script>
+</body>
+</html>

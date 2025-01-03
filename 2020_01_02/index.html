@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="dystans">Dystans do przejechania w km</label><br>
+    <input name="dystans" id="dys" type="number" value="200"><br>
+    <label for="spalanie">Spalanie samochodu w l/100km:</label><br>
+    <input name="spalanie" id="sp" type="number" value="7"><br>
+    <input type="submit" id="wyslij" value="OBLICZ">
+    <div id="wynik">
+
+    </div>
+    <script>
+        wyslij.onclick = () => {
+            let spa = parseInt(sp.value);
+            let dysa = parseInt(dys.value);
+            let ile = (dysa/spa);
+
+            wynik.innerHTML = "Potrzebujesz: " + ile + " litrów paliwa";
+        }
+    </script>
+</body>
+</html>

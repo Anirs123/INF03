@@ -1,0 +1,8 @@
+kw1
+SELECT imie, nazwisko, stanowisko FROM `kadra` WHERE stanowisko = "fryzjer" or stanowisko = "stylista";
+kw2
+SELECT count(rodzaj) as liczba_uslug, max(cena) as najwyzsza_cena_uslug_fryzjerskich FROM `uslugi` WHERE rodzaj = "2";
+kw3
+SELECT u.nazwa, d.imie FROM uslugi u INNER JOIN kadra d ON d.id = u.kadra_id;
+kw4
+ALTER TABLE `uslugi` ADD `opinia` TEXT NOT NULL AFTER `cena`;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="wiadomosc" type="text">
+    <button onclick="wyslij()">Wyslij</button>
+    <button onclick="generuj()">Generuj losową odpowiedź</button>
+    <div id="czat">
+
+    </div>
+</body>
+</html>
+<script>
+    function wyslij(){
+        message = wiadomosc.value;
+        czat.innerHTML += `<div>${message}</div>`;
+    }
+    function generuj(){
+        tablica = ["Świetnie!","Kto gra główną rolę?","Lubisz filmy Tego reżysera?","Będę 10 minut wcześniej","Może kupimy sobie popcorn?","Ja wolę Colę","Zaproszę jeszcze Grześka","Tydzień temu też byłem w kinie na Diunie","Ja funduję bilety"]
+        let los = Math.floor(Math.random()*9);
+        czat.innerHTML += `<div>${tablica[los]}</div>`;
+    }
+</script>

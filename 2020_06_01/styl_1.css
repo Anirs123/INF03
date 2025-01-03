@@ -1,0 +1,43 @@
+body{
+    margin: 0; /*dodane*/
+    background-color: #F6E5DC;
+    font-family: Verdana;
+}
+header{
+    background-color: #2F180C;
+    color: khaki;
+    text-align: center;
+    height: 60px;
+}
+section{
+    width: 60%;
+    float: left; /*dodane*/
+}
+aside{
+    font-size: 150%;
+    padding: 70px;
+    float: left; /*dodane*/
+}
+article{
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    clear: both; /*dodane*/
+}
+footer{
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+}
+img{
+    height: 350px;
+}
+input[type="submit"], input[type="reset"]{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
+h1{/*dodane*/
+    margin: 0; /*dodane*/
+}/*dodane*/

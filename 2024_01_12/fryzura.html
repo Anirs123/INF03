@@ -1,0 +1,63 @@
+<!-- Wymagania dotyczące skryptu:
+– Napisany w języku wykonywanym po stronie przeglądarki
+– Należy stosować znaczące nazewnictwo zmiennych i funkcji w języku polskim lub angielskim
+– Uruchamia się po wciśnięciu przycisku na stronie fryzura.html
+– Na podstawie wybranego przycisku radio wyświetla promocyjną cenę strzyżenia
+– Cena promocyjna jest o 10 zł niższa od ceny strzyżenia zawartej w Tabeli 1
+– Wynik działania wyświetla się w akapicie pod przyciskiem według wzoru: „cena promocyjna:
+<wartość>”, gdzie <wartość> oznacza obliczoną cenę  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>PROMOCJA!</h2>
+    <form>
+        <input name="nazwa" value="kr" type="radio">
+        <label>Krótkie</label><br>
+        <input name="nazwa" value="sr" type="radio">
+        <label>Średnie</label><br>
+        <input name="nazwa" value="pd" type="radio">
+        <label>Półdługie</label><br>
+        <input name="nazwa" value="dl" type="radio">
+        <label>Długie</label><br>
+
+        <input id="wyslij" type="submit" value="Odkryj promocję">
+    </form>
+    <div id="wynik"></div>
+    <script>
+        wyslij.addEventListener('click', (e) => {
+            e.preventDefault();
+            let wybrane = document.querySelector('input[name="nazwa"]:checked').value;
+            let kr = 25;
+            let sr = 30;
+            let pd = 40;
+            let dl = 50;
+            let promocja = 10;
+            let cena = 0;
+            
+            if(wybrane == "kr"){
+                cena =  kr - promocja;
+            }
+            else if(wybrane == "sr"){
+                cena =  sr - promocja;
+            }
+            else if(wybrane == "pd"){
+                cena =  pd - promocja;
+            }
+            else if(wybrane == "dl"){
+                cena =  dl - promocja;
+            }
+            else{
+                wynik.innerHTML = "<p>Nie wybrano pola</p>";
+            }
+
+            // alert(wybrane);
+            wynik.innerHTML = "<p>cena promocyjna: " + cena + "</p>";
+        })
+    </script>
+</body>
+</html>

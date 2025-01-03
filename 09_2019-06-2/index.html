@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Oblicz koszt paliwa</h3>
+    <form>
+        <label>Rodzaj paliwa (1-benzyna, 2-olej napedowy)</label><br>
+        <input id="typ" type="number"><br>
+        <label>Ile litrów</label><br>
+        <input id="ile" type="number"><br>
+        <input type="submit" value="OBLICZ" id="wynik">
+        <div id="wyswietl"></div>
+    </form>
+</body>
+</html>
+<script>
+    // let wyslij = document.getElementById('wynik');
+    wynik.addEventListener('click', (e) => {
+        e.preventDefault();
+        const typP = typ.value;
+        const IleP = ile.value;
+        // alert(typP + "+" + IleP);
+        if(typP == 1){
+            var koszt = 4;
+        }
+        else if(typP == 2){
+            var koszt = 3.5;
+        }
+        else{
+            var koszt = 0;
+        }
+        const wynikP = koszt * IleP;
+        wyswietl.innerHTML = `koszt paliwa: ${wynikP} zł`;
+    })
+
+    // wynik.onclick = function (e){
+    //     e.preventDefault();
+    //     // alert('ok');
+    //     const Rodz = typ.value;
+    //     const Ile = ile.value;
+    //     // alert(Rodz + "+" + Ile);
+    //     let kosztP;
+    //     if(Rodz == 1)
+    //         kosztP = 4;
+    //     else if(Rodz == 2)
+    //         kosztP = 3.5;
+    //     else
+    //         kosztP = 0;
+
+    //     const cena = kosztP * Ile;
+    //     wyswietl.innerHTML = `koszt paliwa: ${cena} zł`;
+    // }
+</script>

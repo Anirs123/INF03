@@ -1,0 +1,52 @@
+body{
+    background-color: #EEEEEE;
+    font-family: Helvetica;
+}
+.strona{
+    width: 90%;
+    margin: auto;
+}
+.logo, .menu{
+    background-color: LightBlue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+header{
+    background-color: #DDDDDD;
+    height: 200px;
+    clear: both;
+}
+main{
+    color: Navy;
+    margin: 50px;
+    height: 400px;
+}
+footer{
+    text-align: right;
+    background-color: LightBlue;
+    padding: 10px;
+}
+input[type='submit'], input[type='reset']{
+    background-color: LightBlue;
+    color: Navy;
+}
+a{
+    color: navy;
+    font-size: 150%;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+a:hover{
+    border: 1px solid navy;
+}
+/* dodane */
+.logo{
+    float: left;
+}
+.menu{
+    float: left;
+}

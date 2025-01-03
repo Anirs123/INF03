@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Dodaj nowe zgłoszenie</h3>
+    <form action="zgloszenie.php" method="POST">
+        <label for="znr">Numer zespołu ratowniczego:</label><br>
+        <input name="znr" type="number"><br>
+        <label for="dnr">Numer dyspozytora:</label><br>
+        <input name="dnr" type="number"><br>
+        <label for="adr">Adres:</label><br>
+        <input name="adr" type="text" size="100"><br>
+        <input type="reset" value="WYCZYŚĆ">
+        <input type="submit" value="ZGŁOŚ">
+    </form>
+</body>
+</html>

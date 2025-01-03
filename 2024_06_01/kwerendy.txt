@@ -1,0 +1,8 @@
+1.
+SELECT nazwa FROM `wycieczki` WHERE poczatek = "Muszyna" || poczatek = "Wieliczka";
+2.
+SELECT w.nazwa, w.opis, w.poczatek, z.zrodlo FROM `wycieczki` w inner join zdjecia z on z.id = w.zdjecia_id;
+3.
+SELECT count(*) as liczba_wycieczek FROM `wycieczki`;
+4.
+ALTER TABLE `wycieczki` ADD `ocena` INT NOT NULL AFTER `koniec`;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: green;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h3>Generowanie ciągu arytmetycznego</h3>
+    <label for="a">Pierwszy wyraz A1:</label>
+    <input name="a" id="a" type="number"><br>
+    <label for="r">Różnica ciągu R:</label>
+    <input name="r" id="r" type="number"><br>
+    <label for="n">Liczba wyrazów ciągu N:</label>
+    <input name="n" id="n" type="number"><br>
+    <input type="submit" value="Generuj ciąg" id="generuj">
+    <div id="odp">
+
+    </div>
+    <script>
+        generuj.onclick = () => {
+            let la = parseInt(a.value);
+            let lr = parseInt(r.value);
+            let ln = parseInt(n.value);
+
+            let ciag = 'ciag arytmetycnzy zawiera wyrazy: ';
+            // Definicje matematyczne
+            // Ciąg liczbowy an nazywamy arytmetycznym, jeśli dla pewnej liczby r zwanej różnicą ciągu zachodzi:
+            // an+1= an+r
+            // Wzór na n-ty wyraz ciągu arytmetycznego (an) o pierwszym wyrazie a1 i różnicy r:
+            // an=a1+(n-1)r
+
+            start = la;
+            for(i = 0; i < ln; i++){
+                ciag += start + ", ";
+                start += lr;
+            }
+            odp.innerHTML = ciag;
+        }
+    </script>
+</body>
+</html>
