@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+* {
+    font-family: Garamond;
+    background-color: MistyRose;
+    color: rgb(62, 39, 35);
+    text-align: center;
+    margin: 0 auto;
+}
+h1{
+    font-size: 45px;
+    margin-left: 280px;
+}
+main {
+    display: flex;
+    margin-top: 3%;
+}
+#panelLewy {
+    width: 300px;
+    height: 700px;
+    margin: 30px;
+    margin-left: 50px;
+    /* margin-bottom: 100px; */
+    box-shadow: 15px 15px 10px DimGray;
+    overflow: auto;
+}
+#panelLewy img{
+    height: 450px;
+    width: 300px;
+}
+#but1{
+    margin-right: 25px;
+}
+#but2{
+    margin-left: 25px;
+}
+img {
+    width: 100%;
+}
+button{
+    margin-bottom: 10px;
+}
+#panelPrawy {
+    width: 65%;
+    height: 600px;
+}
+#panelPrawy img{
+    width: 200px;
+}
+#glowne{
+    width: 600px !important;
+    height: 400px;
+    box-shadow: 15px 15px 10px DimGray;
+    margin-bottom: 30px;
+}
+img[alt="miniatura"] {
+    width: 140px;
+    padding: 2px;
+    border-radius: 5%;
+}
+img[alt="miniatura"]:hover {
+    border: 1px dotted black;
+}
+
+#zmiana {
+    width: 500px;
+    margin: 30px;
+    box-shadow: 15px 15px 10px DimGray;
+}
+table {
+    border: 1px dashed black;
+    width: 100%;
+}
+
