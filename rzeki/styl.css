@@ -1,0 +1,50 @@
+*{
+    font-family: Georgia;
+}
+header{
+    background-color: Navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+    float: left;
+}
+menu{
+    background-color: Navy;
+    padding: 20px;
+}
+.opcje{
+    color: silver;
+    padding: 50px;
+}
+.opcje:hover{
+    color: white;
+    text-decoration: underline;
+}
+aside, section{
+    background-color: Azure;
+    height: 550px;
+}
+aside{
+    width: 70%;
+    float: left;
+}
+section{
+    width: 30%;
+    float: left;
+}
+footer{
+    background-color: Navy;
+    color: white;
+}
+table{
+    border: 1px solid Navy;
+    padding: auto;
+    width: 70%;
+}
+table tr:hover{
+    background-color: skyblue;
+}
+section img{
+    width: 90%;
+}
